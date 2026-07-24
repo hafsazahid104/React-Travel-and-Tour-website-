@@ -1,0 +1,46 @@
+*{
+    font-family: sans-serif;
+}
+h2{
+    font-family: serif;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.carditems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.card h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.card p{
+    font-size: larger;
+}
+@media (max-width: 820px){
+    .carditems{
+    display: block;
+}
+    .card{
+    padding-top: 10px;
+}
+}
+
+@media (min-width: 850px) and (max-width: 1024px){
+    .carditems{
+    display: block;
+    margin-top: 10px;
+    }
+    .card p{
+    font-size: larger;
+   }   
+}

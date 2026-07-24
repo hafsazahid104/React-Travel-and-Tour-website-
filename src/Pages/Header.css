@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+h1{
+  font-family: serif;
+}
+.navBar{
+    z-index: 1000;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    left: 40px;
+    right: 40px;
+    top: 20px;
+    height: 80px;
+    box-shadow: 0 8px 20px rgba(0,0, 0, 0.12);
+}
+#logo{
+    font-size: 40px;
+}
+.navItems{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.navItems a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.items a:hover{
+    background-color: teal;
+    color: white;
+}
+.btn1{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.menuBtn{
+    display: none;
+}
+
+/* media queries */
+@media (max-width: 820px){
+  .menuBtn{
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: x-large;
+  } 
+  .navItems{
+    display: none;
+  }
+  .navBar{
+    left: 30px;
+    right: 30px;
+    top: 20px;
+    height: 65px;
+    padding: 0 18px;
+    box-shadow: 18px rgba(0,0, 0, 0.12);
+    z-index: 1000;
+   }
+   #logo{
+    font-size: 32px;
+   }
+  .navItemsActive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    top: 80px;
+    left: 30px;
+    right: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0, 0, 0.12);
+    }
+  .itemsActive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    }
+  .itemsActive a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    }
+  .btn1{
+    background-color: teal;
+    color: white;
+    font-size: larger;
+    width: 200px;
+    height: 50px;
+    }
+  .itemsActive a:hover{
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+   } 
+}
